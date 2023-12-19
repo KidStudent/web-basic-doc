@@ -1,0 +1,49 @@
+@use './mixins/mixins.scss' as *;
+@use './themes/handle.scss' as *;
+
+@include b(modal) {
+  .full {
+    font-size: 18px;
+    margin-right: 30px;
+  }
+
+  &.drag-modal {
+    &.ivu-modal-wrap {
+      display: inline-block;
+      .ivu-modal {
+        display: flex;
+        justify-content: center;
+        width: 100% !important;
+        top: 100px;
+      }
+    }
+  }
+  .ivu-modal-header {
+    @include background_color('modalHeaderBg');
+    .ivu-modal-header-inner {
+      font-weight: 700;
+      @include font_color('modalHeaderInnerColor');
+    }
+  }
+  .ivu-modal-content {
+    @include background('modalContentBg');
+    @include border_color('modalContentBorder');
+    border: 1px solid;
+    border-radius: 4px;
+    opacity: 1;
+    .ivu-modal-footer {
+      padding: 0;
+      height: 66px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      border-top: 1px solid;
+      @include border_color('modalFooterBorder');
+      opacity: 1;
+      button + button {
+        margin-left: 10px;
+      }
+    }
+  }
+}

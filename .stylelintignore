@@ -1,0 +1,10 @@
+**/dist
+**/es
+**/lib
+**/node_modules
+**/.cache
+**/.temp
+**/public/map
+**/map/minemap/layer-tree.vue
+play
+node_modules

@@ -1,0 +1,139 @@
+@use './mixins/mixins.scss' as *;
+@use './themes/handle.scss' as *;
+
+@include b(upload) {
+  display: flex;
+  // justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+
+  .ivu-icon-ios-add {
+    font-size: 30px;
+    color: #888;
+  }
+
+  .upload-item {
+    width: 80px;
+    height: 80px;
+    margin-left: 10px;
+    position: relative;
+    background: #f9f9f9;
+    border: 1px dashed #d3d7de;
+    color: rgba(0, 0, 0, 0.35);
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:nth-child(6) {
+      margin-left: 0;
+    }
+    .ivu-upload {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .upload-img:nth-child(6) {
+    margin-left: 0;
+  }
+
+  .upload-label {
+    width: 100%;
+    height: 100%;
+    border: 1px dashed #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 !important;
+  }
+
+  .upload-list {
+    width: 100%;
+    height: 100%;
+    line-height: 1;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    position: relative;
+    cursor: pointer;
+    .qsdi-image,
+    .ivu-image-inner {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .upload-text {
+    font-size: 12px;
+  }
+
+  .upload-icon {
+    display: inline-block;
+    width: 48px;
+    height: 40px;
+  }
+
+  .upload-list:hover .upload-list-cover,
+  .upload-list:hover .upload-list-radius {
+    display: flex;
+  }
+
+  .upload-list-cover,
+  .upload-list-radius {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 11;
+  }
+
+  .upload-list-radius {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    top: -10px;
+    right: -10px;
+    left: unset;
+    margin: 0;
+  }
+
+  .upload-list-cover i,
+  .upload-list-radius i {
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .upload-list-radius i {
+    font-size: 18px;
+  }
+
+  .loader-box {
+    height: 100%;
+  }
+
+  .loader {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding: 1em;
+    display: inline-block;
+    vertical-align: top;
+    z-index: 5;
+
+    svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+    }
+  }
+}

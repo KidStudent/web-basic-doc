@@ -1,0 +1,16 @@
+**/dist
+**/es
+**/lib
+*.d.ts
+**/node_modules
+**/.cache
+**/.temp
+**/.d.ts
+**/public/map
+play
+package.json
+.eslintrc.js
+.prettierrc.js
+commitlint.config.js
+stylelint.config.js
+node_modules

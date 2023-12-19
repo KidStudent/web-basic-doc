@@ -1,5 +1,7 @@
-import { defineUserConfig } from 'vuepress'
-import { customTheme } from '../../theme'
+import { defineUserConfig } from 'vuepress';
+import { customTheme } from '../../theme';
+import { viteBundler } from '@vuepress/bundler-vite';
+import vueJsx from '@vitejs/plugin-vue-jsx';
 export default defineUserConfig({
   lang: 'zh-CN',
   title: '前端框架文档',
@@ -13,6 +15,57 @@ export default defineUserConfig({
         href: '..//logo.png',
       },
     ],
+    [
+      'link',
+      {
+        rel: 'stylesheet',
+        href: '/map/minemap/minemap.css',
+      },
+    ],
+    [
+      'link',
+      {
+        rel: 'stylesheet',
+        href: '/map/minemap/minemap-edit.css',
+      },
+    ],
+    [
+      'script',
+      {
+        type: 'text/javascript',
+        src: '/map/minemap/minemap.js',
+      },
+    ],
+    [
+      'script',
+      {
+        type: 'text/javascript',
+        src: '/map/minemap/turf.min.js',
+      },
+    ],
+    [
+      'script',
+      {
+        type: 'text/javascript',
+        src: '/map/minemap/minemap-util.js',
+      },
+    ],
+    [
+      'script',
+      {
+        type: 'text/javascript',
+        src: '/map/minemap/minemap-edit.js',
+      },
+    ],
   ],
+  bundler: viteBundler({
+    viteOptions: {
+      resolve: {
+        dedupe: ['vue'],
+      },
+      plugins: [vueJsx()],
+    },
+    vuePluginOptions: {},
+  }),
   theme: customTheme(),
-})
+});

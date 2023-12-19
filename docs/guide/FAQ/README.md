@@ -61,6 +61,10 @@ defineOptions({
 
 ## `$ref` 语法糖不起作用
 
+:::warning 警告
+Vue 3.4 及以上版本中被移除，最新的前端框架中已弃用
+:::
+
 响应性语法糖目前默认是关闭状态，需要你显式选择启用。。
 
 官方解答 [显式启用](https://cn.vuejs.org/guide/extras/reactivity-transform.html#explicit-opt-in)

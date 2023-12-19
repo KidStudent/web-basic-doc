@@ -1,0 +1,39 @@
+@use './mixins/mixins.scss' as *;
+@use './themes/handle.scss' as *;
+
+@include b(table) {
+  overflow: hidden;
+  .ivu-table-tip {
+    overflow-x: auto;
+    position: relative;
+  }
+  .ivu-table-overflowX {
+    & ~ .ivu-table-fixed-right,
+    & ~ .ivu-table-fixed {
+      height: calc(100% - 8px);
+      .ivu-table-fixed-body {
+        padding-bottom: 8px;
+      }
+    }
+    & ~ .ivu-table-fixed-shadow {
+      overflow: hidden;
+    }
+  }
+  .ivu-table-with-summary {
+    .ivu-table {
+      overflow: auto;
+      > div {
+        overflow: initial !important;
+      }
+    }
+  }
+}
+
+.no-shadow {
+  .ivu-table-fixed {
+    box-shadow: none !important;
+  }
+  .ivu-table-fixed-right {
+    box-shadow: none !important;
+  }
+}

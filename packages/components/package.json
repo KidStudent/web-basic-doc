@@ -1,0 +1,33 @@
+{
+  "name": "@web-basic-doc/components",
+  "version": "1.0.73",
+  "main": "lib/index.js",
+  "module": "es/index.mjs",
+  "unpkg": "dist/index.full.js",
+  "jsdelivr": "dist/index.full.js",
+  "scripts": {
+    "build": "vite build"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist",
+    "es",
+    "lib"
+  ],
+  "keywords": [
+    "vue3组件库"
+  ],
+  "author": "zml",
+  "license": "MIT",
+  "typings": "lib/index.d.ts",
+  "directories": {
+    "lib": "lib"
+  },
+  "description": "",
+  "devDependencies": {
+    "@vitejs/plugin-vue-jsx": "^2.1.1",
+    "unplugin-vue-define-options": "^1.0.0"
+  }
+}

@@ -1,0 +1,136 @@
+@use './mixins/mixins.scss' as *;
+@use './themes/handle.scss' as *;
+@include b(page) {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  text-align: right;
+  margin-right: 0;
+  z-index: 199;
+  height: 64px;
+  @include background_color('pageBg');
+  @include font_color('pageColor');
+  position: relative;
+
+  .total-text {
+    @include font_color('pageTotalColor');
+  }
+
+  .total-count {
+    @include font_color('pageColor');
+    font-size: 14px;
+    line-height: 24px;
+    height: 24px;
+  }
+
+  .prev-text {
+    display: inline-block;
+    line-height: 24px;
+  }
+
+  .page-body {
+    overflow: hidden;
+    font-size: 14px;
+    @include font_color('pageBodyColor');
+
+    .page-selection {
+      margin-left: 10px;
+      width: auto;
+    }
+
+    // 更改select
+    .ivu-select {
+      height: 24px;
+      @include font_color('pageSelectColor');
+
+      .ivu-select-selection {
+        height: 24px;
+        // background: #02162b;
+        border: 1px solid #10457e;
+        border-radius: 4px;
+
+        .ivu-select-selected-value,
+        .ivu-select-placeholder {
+          height: 24px;
+          line-height: 24px;
+        }
+
+        .ivu-select-arrow {
+          color: #2b84e2;
+        }
+      }
+
+      .ivu-select-dropdown {
+        .ivu-select-item {
+          height: 24px;
+          line-height: 24px;
+          padding: 0 16px;
+          text-align: center;
+        }
+      }
+    }
+
+    .page-item {
+      height: 24px;
+      line-height: 24px;
+      border-radius: 4px;
+      border: 1px solid;
+      @include border_color('pageItemBorder');
+      @include background_color('pageItemBg');
+      @include font_color('pageBodyColor');
+      margin-left: 10px;
+      float: left;
+      text-align: center;
+      user-select: none;
+      padding: 0 10px;
+      cursor: pointer;
+
+      &:hover {
+        @include border_color('pageItemBorderHover');
+        @include background_color('pageItemBgHover');
+        @include font_color('pageItemColorHover');
+      }
+
+      &.page-item-active {
+        &:hover {
+          @include background_color('pageItemBgActiveHover');
+          @include font_color('pageItemColorActiveHover');
+        }
+      }
+    }
+
+    .total-page {
+      width: auto;
+      padding: 0 10px;
+    }
+
+    .page-item-active {
+      @include border_color('pageItemBorderActive');
+      @include background_color('pageItemBorderHover');
+      @include font_color('pageItemColorActive');
+    }
+
+    .page-disabled {
+      cursor: not-allowed;
+    }
+
+    .page-jump {
+      display: inline-block;
+      margin-left: 10px;
+      @include font_color('pageColor');
+
+      .page-input {
+        margin: 0 10px 0 10px;
+        height: 24px;
+        line-height: 24px;
+        width: 50px;
+
+        .ivu-input-number-input {
+          height: 24px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+}

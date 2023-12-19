@@ -1,0 +1,64 @@
+{
+  "colorType": {
+    "2": {
+      "dataKey": "2",
+      "dataValue": "白",
+      "color": "#ffffff",
+      "class": "white",
+      "style": {
+        "background": "#ffffff",
+        "color": "#000"
+      }
+    },
+    "6": {
+      "dataKey": "6",
+      "dataValue": "黄",
+      "color": "#FDEE38",
+      "class": "yellow",
+      "style": {
+        "background": "#FDEE38",
+        "color": "#000"
+      }
+    },
+    "9": {
+      "dataKey": "9",
+      "dataValue": "绿",
+      "color": "#67D28D",
+      "class": "green",
+      "style": {
+        "background": "#67D28D",
+        "color": "#000"
+      }
+    },
+    "5": {
+      "dataKey": "5",
+      "dataValue": "蓝",
+      "color": "#2379F9",
+      "class": "blue",
+      "style": {
+        "background": "#2379F9",
+        "color": "#ffffff"
+      }
+    },
+    "1": {
+      "dataKey": "1",
+      "dataValue": "黑",
+      "color": "#000",
+      "class": "black",
+      "style": {
+        "background": "#000",
+        "color": "#ffffff"
+      }
+    },
+    "99": {
+      "dataKey": "99",
+      "dataValue": "其它",
+      "color": "#D9D9D9",
+      "class": "other",
+      "style": {
+        "background": "#D9D9D9",
+        "color": "#ffffff"
+      }
+    }
+  }
+}

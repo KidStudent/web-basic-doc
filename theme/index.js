@@ -1,11 +1,11 @@
-import { getDirname, path } from '@vuepress/utils'
-import { defaultTheme } from '@vuepress/theme-default'
+import { getDirname, path } from '@vuepress/utils';
+import { defaultTheme } from '@vuepress/theme-default';
 
-import { navbar, sidebar, plugins } from './configs'
+import { navbar, sidebar, plugins, mdPlugin } from './configs';
 
-const __dirname = getDirname(import.meta.url)
+const __dirname = getDirname(import.meta.url);
 
-export const customTheme = (options) => {
+export const customTheme = () => {
   // 返回一个主题对象
   return {
     name: 'vuepress-theme-custom',
@@ -23,5 +23,6 @@ export const customTheme = (options) => {
       lastUpdatedText: '上次更新',
       contributorsText: '贡献者',
     }),
-  }
-}
+    extendsMarkdown: (md) => mdPlugin(md),
+  };
+};

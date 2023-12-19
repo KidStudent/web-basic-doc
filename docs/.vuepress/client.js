@@ -1,4 +1,2 @@
-import { defineClientConfig } from '@vuepress/client'
-export default defineClientConfig({
-  
-})
+import { defineClientConfig } from '@vuepress/client';
+export default defineClientConfig({});

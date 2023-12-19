@@ -1,0 +1,22 @@
+@use './mixins/mixins.scss' as *;
+@use './themes/handle.scss' as *;
+
+@include b(confirm) {
+  .ivu-modal-body {
+    text-align: center;
+  }
+  .content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    .warning {
+      color: #d66418;
+    }
+
+    .desc {
+      margin-left: 10px;
+      @include font_color('confirmDescColor');
+    }
+  }
+}

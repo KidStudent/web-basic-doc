@@ -1,0 +1,32 @@
+@use './mixins/mixins.scss' as *;
+@use './themes/handle.scss' as *;
+@include b(label) {
+  overflow: visible;
+  line-height: 32px;
+  .label {
+    display: inline-block;
+    font-size: 14px;
+    white-space: pre;
+    vertical-align: middle;
+    @include font_color('labelColor');
+    width: fit-content;
+  }
+  &.required {
+    overflow: visible;
+    .label {
+      .label-text {
+        position: relative;
+        &:before {
+          content: '*';
+          left: -10px;
+          display: inline-block;
+          position: absolute;
+          margin-right: 0.020833rem;
+          font-size: 0.072917rem;
+          color: #ed4014;
+          font-family: SimSun;
+        }
+      }
+    }
+  }
+}

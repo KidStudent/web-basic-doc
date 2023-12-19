@@ -172,12 +172,10 @@ export default {
 
 ```javascript
 proxy: {
-  '/ivdg-asset-app': {
-    target: `http://192.168.2.42:9006`,
+  '/qsdi-system-service': {
+    target: `http://192.168.2.52:8881`,
     changeOrigin: true,
-    pathRewrite: {
-      '/ivdg-asset-app': ''
-    }
+    rewrite: (path) => path.replace(/^\/qsdi-system-service/, ''),
   },
   '/qsdi': {
     target: `http://192.168.1.121:8888`,

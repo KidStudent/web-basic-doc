@@ -1,0 +1,49 @@
+@use './mixins/mixins.scss' as *;
+@use './themes/handle.scss' as *;
+
+@include b(table-tips) {
+  position: absolute;
+  top: 50%;
+  width: 150px;
+  transform: translateY(-50%);
+  border: 1px solid #1575cc;
+  z-index: 999;
+  background: #051124;
+  padding: 10px;
+  color: #fff;
+  border-radius: 5px;
+  .text {
+    width: 108px;
+  }
+  .title {
+    position: relative;
+    .close {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      font-size: 12px;
+      color: #768192;
+    }
+    &::before {
+      position: absolute;
+      content: '';
+      display: inline-block;
+      border: 10px solid;
+      border-color: transparent transparent transparent #1575cc;
+      top: 20px;
+      right: -31px;
+    }
+    &::after {
+      position: absolute;
+      content: '';
+      display: inline-block;
+      border: 10px solid;
+      right: -30px;
+      top: 20px;
+      border-color: transparent transparent transparent #051124;
+    }
+  }
+  .orange-color {
+    color: #e2872b;
+  }
+}

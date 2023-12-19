@@ -27,10 +27,8 @@ permalink: /guide/catalogue/
 │   │   ├── nav-header  # 头部导航栏
 │   │   ├── nav-left  # 侧边导航栏
 │   │   ├── ui-avater  # 头像组件
-│   │   ├── ui-confirm  # 点击确认弹框组件
 │   │   ├── ui-menu  # 菜单组件
 │   │   ├── ui-menu-tabs  # 菜单标签页组件
-│   │   ├── ui-modal  # 弹框组件
 │   │   ├── regisiterGlobComp.js  # 注册全局组件
 │   ├── config  # 配置文件
 │   │   ├── api  # 接口地址，请根据不同模块放入不同文件中
