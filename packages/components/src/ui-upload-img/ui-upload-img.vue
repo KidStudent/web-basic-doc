@@ -121,7 +121,7 @@
   const uploadRef = ref(null);
   const successData = ref([]);
   let loading = ref(false);
-  const emit = defineEmits(['on-choose']);
+  const emit = defineEmits(['on-choose', 'on-before-upload', 'on-error', 'on-remove']);
   const props = defineProps({
     // 设置上传的请求头部
     headers: {},
