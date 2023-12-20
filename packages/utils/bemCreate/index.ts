@@ -62,6 +62,6 @@ function createBEM(prefixName: string) {
 }
 
 export function createNamespace(name: string) {
-  const prefixName = `qsdi-${name}`;
+  const prefixName = `web-basic-${name}`;
   return createBEM(prefixName);
 }
