@@ -17,7 +17,10 @@
     // 将对应的数据存储到localStorage，方便后续使用
     localStorage.setItem('type', val);
     // 全局添加样式名称：data-skin，并在localStorage获取对应的样式名称的值。
-    window.document.documentElement.setAttribute('qsdi-skin', localStorage.getItem('type') || '');
+    window.document.documentElement.setAttribute(
+      'web-basic-skin',
+      localStorage.getItem('type') || '',
+    );
   }
 
   function getTheme() {
@@ -28,9 +31,12 @@
      *  果不为空的话就将对应获取到的值给到 data-skin
      **/
     if (type) {
-      window.document.documentElement.setAttribute('qsdi-skin', localStorage.getItem('type') || '');
+      window.document.documentElement.setAttribute(
+        'web-basic-skin',
+        localStorage.getItem('type') || '',
+      );
     } else {
-      window.document.documentElement.setAttribute('qsdi-skin', 'dark');
+      window.document.documentElement.setAttribute('web-basic-skin', 'dark');
     }
   }
   let echartOption = ref({});
@@ -108,7 +114,7 @@
     flex: 1;
   }
 
-  [qsdi-skin='dark'] .app {
+  [web-basic-skin='dark'] .app {
     background-color: #041129;
   }
 </style>
