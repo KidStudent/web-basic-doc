@@ -85,7 +85,7 @@ onMounted(() => {
 
 这时在 dom 中可以看到如下图所示
 
-![dataskin-create](/images/theme/dataskin-create.png)
+![dataskin-create](/images/guide/theme/dataskin-create.png)
 
 ### 全局引入皮肤变量
 

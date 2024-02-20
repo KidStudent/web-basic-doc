@@ -14,6 +14,10 @@ permalink: /guide/introduction/
 
 本地开发推荐使用 `Chrome 64+` 浏览器，生产环境通过 [@vitejs/plugin-legacy](https://github.com/vitejs/vite/tree/main/packages/plugin-legacy) 向下做了兼容
 
+## 项目架构图
+
+![architecture](/images/guide/introduction/architecture.png)
+
 ## 维护者
 
 张明亮

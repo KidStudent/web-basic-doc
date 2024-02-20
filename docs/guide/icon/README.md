@@ -13,7 +13,7 @@ permalink: /guide/icon/
 
 如下图, 分别有两个文件夹分别为 `iconfont` 和 `configureIcons`
 
-![namespace-warning](/images/icon/iconfont-path.png)
+![namespace-warning](/images/guide/icon/iconfont-path.png)
 
 `iconfont` 是本系统中所使用的图标库 `configureIcons` 是菜单所使用的图标库
 
@@ -56,7 +56,7 @@ permalink: /guide/icon/
 
 `@import` 和 `@use` 都可 这里推荐使用 [@use](https://sass.bootcss.com/documentation/at-rules/use)
 
-![use](/images/icon/scss-import-use.png)
+![use](/images/guide/icon/scss-import-use.png)
 
 #### [命名空间](https://sass.bootcss.com/documentation/at-rules/use#choosing-a-namespace)
 ::: tip
@@ -70,7 +70,7 @@ permalink: /guide/icon/
 ```
 
 ##### 此时会有一个警告
-![namespace-warning](/images/icon/namespace-warninig.png)
+![namespace-warning](/images/guide/icon/namespace-warninig.png)
 
 ##### 正确示例
 ```scss
@@ -92,7 +92,7 @@ permalink: /guide/icon/
 ```
 
 ##### 此时会有一个错误
-![iconfont-css-error](/images/icon/iconfont-css-error.png)
+![iconfont-css-error](/images/guide/icon/iconfont-css-error.png)
 
 ##### 正确示例
 ```scss

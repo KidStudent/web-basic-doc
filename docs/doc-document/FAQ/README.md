@@ -13,3 +13,11 @@ permalink: /doc-document/FAQ/
 ## 本地环境调试没有报错，但打包时有错误？
 
 `document is not defined` 、 `sessionStorage is not defined` 、 `window is not defined` 、 `getAttr` 此类报错是因为组件库是在 `node` 环境中打包的此时没有该变量，所以需要将使用到 `dom` 相关变量放到函数或者在 dom 加载之后执行。
+
+## 如何发布最新文档
+
+见 [生产环境部署](/doc-document/start/#生产环境部署)
+
+## play 项目的作用
+
+使用来测试 `组件库` 中的组件能否在 `vue` 项目中正常运行，可以把 `play` 项目看作是一个测试单元。

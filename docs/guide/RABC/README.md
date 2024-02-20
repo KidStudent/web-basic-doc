@@ -8,7 +8,7 @@ permalink: /guide/RABC/
 
 `RABC` （Role Based Access Control）权限指的是基于角色的访问控制
 
-![RABC-introduce](/images/RABC/RABC-introduce.png)
+![RABC-introduce](/images/guide/RABC/RABC-introduce.png)
 
 ## 用户
 
@@ -44,7 +44,7 @@ permalink: /guide/RABC/
 
 第一步：在 `系统管理` 中添加按钮权限，如下图所示
 
-![RABC-btn-permission](/images/RABC/RABC-btn-permission.png)
+![RABC-btn-permission](/images/guide/RABC/RABC-btn-permission.png)
 
 | **参数属性** | **说明**          | **是否必填** |
 | ------------ | ----------------- | ------------ |

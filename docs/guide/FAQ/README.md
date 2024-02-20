@@ -12,13 +12,13 @@ permalink: /guide/FAQ/
 
 ## 项目首次启动 `cmd` 中出现错误 Cannot assign to "xxx" because it is a constant
 
-![FAQ-error](/images/FAQ/FAQ-error.png)
+![FAQ-error](/images/guide/FAQ/FAQ-error.png)
 
 声明对象时使用了 `const` 但是又更改了它的值，使用 `let` 代替它
 
 ## 项目警告 `Invalid watch source`
 
-![FAQ-watch-warning](/images/FAQ/FAQ-watch-warning.png)
+![FAQ-watch-warning](/images/guide/FAQ/FAQ-watch-warning.png)
 
 `vue3` watch 函数必须监听的是 `getter/effect function, a ref, a reactive object, or an array of these types` 举个:chestnut:
 
@@ -153,7 +153,7 @@ onMounted(() => {
 
 如果没有对不存在的路由进行匹配，登录系统会有如下警告：
 
-![FAQ-router-warning](/images/FAQ/FAQ-router-warning.png)
+![FAQ-router-warning](/images/guide/FAQ/FAQ-router-warning.png)
 
 这是由于系统中的路由是由后端生成的，初始化未登录时还没有在路由列表中生成路由造成的，这时需要由一个 [404 路由匹配](https://router.vuejs.org/zh/guide/essentials/dynamic-matching.html#%E6%8D%95%E8%8E%B7%E6%89%80%E6%9C%89%E8%B7%AF%E7%94%B1%E6%88%96-404-not-found-%E8%B7%AF%E7%94%B1)
 

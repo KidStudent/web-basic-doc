@@ -164,7 +164,7 @@ export default {
 
 此时从 `chrome` 的 `network` 中看到的请求地址为
 
-![request-network](/images/request/request-network.png)
+![request-network](/images/guide/request/request-network.png)
 
 真实代理地址已经为 `http://192.168.1.121:8888/qsdi-auth-service/oauth/token`
 

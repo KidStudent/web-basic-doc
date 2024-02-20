@@ -180,33 +180,8 @@ export const navbar = [
     text: 'chrome扩展',
     children: [
       {
-        text: '介绍',
-        link: '/chrome-extension/introduction/',
-      },
-      {
-        text: '开始',
-        link: '/chrome-extension/start/',
-      },
-      {
-        text: 'Manifest',
-        link: '/chrome-extension/manifest/',
-      },
-      {
-        text: '在扩展中使用Vue2',
-        children: [
-          {
-            text: '使用vue-cli搭建',
-            link: '/chrome-extension/vuewithextension/',
-          },
-          {
-            text: '配置项目',
-            link: '/chrome-extension/configuration/',
-          },
-          {
-            text: '目录结构',
-            link: '/chrome-extension/catalogue/',
-          },
-        ],
+        text: 'iVDG反馈插件',
+        link: '/ivdg-extension/introduction/',
       },
     ],
   },
@@ -214,8 +189,39 @@ export const navbar = [
     text: '地图',
     children: [
       {
+        text: '公司地图',
+        link: '/pgis/tile/',
+      },
+      {
         text: '四维图新',
         link: '/minemap/prepare/',
+      },
+    ],
+  },
+  {
+    text: '分支差异',
+    children: [
+      {
+        text: 'iVDG',
+        children: [
+          {
+            text: '枣庄分支',
+            link: '/branch-differences/ivdg/zaozhuang/',
+          },
+          {
+            text: '河南分支',
+            link: '/branch-differences/ivdg/henan/',
+          },
+        ],
+      },
+    ],
+  },
+  {
+    text: 'SDK',
+    children: [
+      {
+        text: '小智',
+        link: '/xiaozhi/introduction/',
       },
     ],
   },

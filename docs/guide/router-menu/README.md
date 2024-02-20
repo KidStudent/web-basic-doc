@@ -31,7 +31,7 @@ const router = {
 
 在 `系统管理` 中添加，找到对应的应用系统，新增模块，如下图
 
-![add-router-dynamic](/images/routerMenu/add-router-dynamic.png)
+![add-router-dynamic](/images/guide/routerMenu/add-router-dynamic.png)
 
 ```
 父层级 —— 同配置项parentId
@@ -290,4 +290,4 @@ function getRedirect(routes, route, redirect = '') {
 
 ### 流程图
 
-![router-before-each](/images/routerMenu/router-before.png)
+![router-before-each](/images/guide/routerMenu/router-before.png)

@@ -26,4 +26,4 @@ permalink: /guide/config/
 
 在系统管理页面中
 
-![online-config](/images/config/online-config.png)
+![online-config](/images/guide/config/online-config.png)

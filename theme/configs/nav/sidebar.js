@@ -100,22 +100,28 @@ export const sidebar = {
       ],
     },
   ],
-  '/chrome-extension': [
+  '/ivdg-extension': [
     {
       text: '指南',
       children: [
-        '/chrome-extension/introduction/',
-        '/chrome-extension/start/',
-        '/chrome-extension/manifest/',
+        '/ivdg-extension/introduction/',
+        '/ivdg-extension/start/',
+        '/ivdg-extension/manifest/',
       ],
     },
     {
       text: '在扩展中使用Vue2',
       children: [
-        '/chrome-extension/vuewithextension/',
-        '/chrome-extension/configuration/',
-        '/chrome-extension/catalogue/',
+        '/ivdg-extension/vuewithextension/',
+        '/ivdg-extension/configuration/',
+        '/ivdg-extension/catalogue/',
       ],
+    },
+  ],
+  '/pgis': [
+    {
+      text: '第三方接入',
+      children: ['/pgis/tile/'],
     },
   ],
   '/minemap': [
@@ -125,7 +131,7 @@ export const sidebar = {
     },
     {
       text: '海安项目',
-      children: ['/minemap/layer-load/', '/minemap/normal-filter/', '/minemap/build-filter'],
+      children: ['/minemap/layer-load/', '/minemap/normal-filter/', '/minemap/build-filter/'],
     },
     {
       text: '地图核心',
@@ -137,6 +143,32 @@ export const sidebar = {
         '/minemap/edit/',
         '/minemap/fence/',
       ],
+    },
+  ],
+  '/branch-differences': [
+    {
+      text: 'iVDG',
+      children: ['/branch-differences/ivdg/zaozhuang/', '/branch-differences/ivdg/henan/'],
+    },
+  ],
+  '/xiaozhi': [
+    {
+      text: '指南',
+      children: [
+        '/xiaozhi/introduction/',
+        '/xiaozhi/start/',
+        '/xiaozhi/catalogue/',
+        '/xiaozhi/deployment/',
+        '/xiaozhi/mock/',
+      ],
+    },
+    {
+      text: '配置',
+      children: ['/xiaozhi/vite/', '/xiaozhi/main/', '/xiaozhi/index-html/', '/xiaozhi/gptconfig/'],
+    },
+    {
+      text: '其他',
+      children: ['/xiaozhi/FAQ/'],
     },
   ],
 };
